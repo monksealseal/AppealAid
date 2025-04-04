@@ -2,22 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>AppealAid</title>
-  <script>
-    // Handle URL pattern for direct appeal ID access
-    // For example: /appeals/123 should redirect to index with state
-    const pathParts = window.location.pathname.split('/');
-    
-    if (pathParts.length >= 3) {
-      // This is a dynamic route like /appeals/123
-      const appealId = pathParts[2];
-      if (appealId && appealId !== '') {
-        sessionStorage.setItem('redirectPath', window.location.pathname);
-      }
-    }
-    
-    window.location.href = "/AppealAid/";
-  </script>
+  <title>AppealAid - Appeals</title>
+  <script src="/AppealAid/direct-router.js"></script>
 </head>
 <body>
   <p>Redirecting to AppealAid...</p>

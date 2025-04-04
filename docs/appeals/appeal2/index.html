@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AppealAid - Appeal View</title>
+  <script>
+    // This file is specifically for /appeals/{id} routes
+    
+    // Extract appeal ID from URL
+    const pathParts = window.location.pathname.split('/');
+    const appealId = pathParts[pathParts.length - 1];
+    
+    // Validate appeal ID
+    if (appealId && appealId !== '') {
+      // Store the exact path for React Router
+      sessionStorage.setItem('redirectPath', `/appeals/${appealId}`);
+      console.log(`Direct appeal access: ${appealId}. Stored path: /appeals/${appealId}`);
+    }
+    
+    // Add any query parameters
+    if (window.location.search) {
+      const redirectPath = sessionStorage.getItem('redirectPath');
+      sessionStorage.setItem('redirectPath', `${redirectPath}${window.location.search}`);
+    }
+    
+    // Redirect to main app
+    window.location.href = '/AppealAid/';
+  </script>
+</head>
+<body>
+  <p>Redirecting to appeal view...</p>
+</body>
+</html>

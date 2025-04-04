@@ -26,21 +26,27 @@ const DocumentSelection = ({
   const [searchQuery, setSearchQuery] = useState('');
   
   // Filter documents based on search query
-  const filteredDocuments = documents?.filter(doc => {
-    if (!searchQuery) return true;
-    
-    const lowerCaseQuery = searchQuery.toLowerCase();
-    return (
-      doc.name.toLowerCase().includes(lowerCaseQuery) ||
-      doc.type.toLowerCase().includes(lowerCaseQuery) ||
-      (doc.claimNumber && doc.claimNumber.toLowerCase().includes(lowerCaseQuery)) ||
-      (doc.provider && doc.provider.toLowerCase().includes(lowerCaseQuery))
-    );
-  }) || [];
+  const filteredDocuments = Array.isArray(documents) 
+    ? documents.filter(doc => {
+        if (!searchQuery) return true;
+        
+        const lowerCaseQuery = searchQuery.toLowerCase();
+        return (
+          (doc.name && doc.name.toLowerCase().includes(lowerCaseQuery)) ||
+          (doc.type && doc.type.toLowerCase().includes(lowerCaseQuery)) ||
+          (doc.claimNumber && doc.claimNumber.toLowerCase().includes(lowerCaseQuery)) ||
+          (doc.provider && doc.provider.toLowerCase().includes(lowerCaseQuery))
+        );
+      }) 
+    : [];
   
   // Filter to only show documents that can be appealed
   const appealableDocuments = filteredDocuments.filter(
-    doc => doc.type === 'Explanation of Benefits' || doc.type === 'Denial Letter'
+    doc => doc && doc.type && (
+      doc.type === 'Explanation of Benefits' || 
+      doc.type === 'Denial Letter' || 
+      doc.type === 'Authorization Denial'
+    )
   );
   
   const handleDocumentSelect = (document) => {

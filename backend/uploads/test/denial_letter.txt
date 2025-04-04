@@ -1,0 +1,40 @@
+BLUE CROSS BLUE SHIELD
+123 Insurance Way
+Anytown, US 12345
+
+EXPLANATION OF BENEFITS - THIS IS NOT A BILL
+
+Date: 07/20/2023
+Date of Service: 07/15/2023
+Claim Number: BC23-456789
+Member ID: XYZ987654321
+Group Number: BCBS-GROUP-1234
+
+PATIENT INFORMATION
+Name: Jane Smith
+Provider: City Medical Center
+Provider NPI: 1234567890
+Address: 456 Health Blvd, Anytown, US 12345
+Phone: (555) 123-4567
+
+SERVICE INFORMATION
+Service: MRI - Lower Back (CPT: 72148)
+Service Description: Magnetic Resonance Imaging of Lumbar Spine without Contrast
+Diagnosis Code: ICD-10 M54.5 (Low back pain)
+Procedure Code: CPT 72148
+
+CLAIM SUMMARY
+Billed Amount: $1,250.00
+Allowed Amount: $875.50
+Patient Responsibility: $875.50
+
+DENIAL INFORMATION
+Status: DENIED
+Denial Code: NMN-450
+Reason for Denial: The service provided is not considered medically necessary according to our clinical guidelines.
+
+APPEAL INFORMATION
+You have the right to appeal this decision within 60 days of the date of this notice. Please refer to your member handbook for information on how to file an appeal or call member services at 1-800-555-1234.
+
+Additional Information:
+Before this service can be approved, documentation must be provided showing that conservative treatments have been tried for at least 6 weeks and have been unsuccessful in providing relief. Please have your physician submit clinical notes documenting failed conservative treatments.

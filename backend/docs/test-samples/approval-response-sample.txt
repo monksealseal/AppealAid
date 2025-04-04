@@ -1,0 +1,48 @@
+APPEAL DECISION LETTER
+
+BlueCross BlueShield of America
+123 Insurance Way
+Healthcare City, CA 90210
+
+Date: 10/15/2023
+Member ID: BCBS1234567
+Group Number: GRP98765
+
+PATIENT INFORMATION:
+Patient: John Doe
+Patient ID: P12345
+Date of Birth: 01/15/1980
+
+CLAIM INFORMATION:
+Claim Number: CL123456
+Appeal Number: AP789012
+Service Date: 06/01/2023
+Provider: Medical Imaging Center
+Service: MRI - Lower Back
+
+APPEAL DECISION: APPROVED
+
+Dear John Doe,
+
+We have reviewed the appeal for the claim referenced above. Based on our review of the additional documentation provided, we have determined that the service meets our medical necessity criteria. Therefore, your appeal has been APPROVED.
+
+The requested amount of $1,500.00 has been approved and will be processed according to your plan benefits. You should see this payment processed within the next 30 days.
+
+REASON FOR DECISION:
+The additional documentation from your physician demonstrated that the MRI of the lower back was medically necessary based on your clinical presentation and the failure of conservative treatment measures.
+
+WHAT THIS MEANS FOR YOU:
+The service will now be covered at your plan's applicable benefit level, subject to any deductibles, copayments, or coinsurance requirements under your plan. You may still be responsible for a portion of the cost based on your specific plan benefits.
+
+ADDITIONAL INFORMATION:
+If you have any questions about this decision or your benefits, please contact Member Services at 1-800-555-1234, Monday through Friday, 8:00 AM to 6:00 PM EST.
+
+Thank you for allowing us to review your appeal.
+
+Sincerely,
+
+Jane Smith
+Appeals Department Supervisor
+BlueCross BlueShield of America
+
+THIS IS AN OFFICIAL DETERMINATION OF YOUR APPEAL

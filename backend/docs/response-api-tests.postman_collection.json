@@ -1,0 +1,234 @@
+{
+  "info": {
+    "name": "AppealAid Response Processing API Tests",
+    "description": "A collection of test requests for the insurance response processing API endpoints",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Authentication",
+      "item": [
+        {
+          "name": "Login",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"test@example.com\",\n  \"password\": \"password123\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/users/login",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "users", "login"]
+            },
+            "description": "Login to get authentication token"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Response Processing",
+      "item": [
+        {
+          "name": "Process Response Document",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"documentId\": \"{{documentId}}\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/responses/process-document",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "responses", "process-document"]
+            },
+            "description": "Process an uploaded response document"
+          },
+          "response": []
+        },
+        {
+          "name": "Manual Response Entry",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"appealId\": \"{{appealId}}\",\n  \"decision\": \"approved\",\n  \"responseDate\": \"2023-08-01\",\n  \"recoveredAmount\": 1800,\n  \"notes\": \"Approved based on additional medical documentation provided.\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/responses/manual-entry",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "responses", "manual-entry"]
+            },
+            "description": "Manually record a response for an appeal"
+          },
+          "response": []
+        },
+        {
+          "name": "Check If Document Is Response",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/responses/check-document/{{documentId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "responses", "check-document", "{{documentId}}"]
+            },
+            "description": "Check if a document appears to be an insurance response"
+          },
+          "response": []
+        },
+        {
+          "name": "Manual Match Response",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"documentId\": \"{{documentId}}\",\n  \"appealId\": \"{{appealId}}\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/responses/manual-match",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "responses", "manual-match"]
+            },
+            "description": "Manually match a response document to an appeal"
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Patient Service",
+      "item": [
+        {
+          "name": "Get Patient Status Update",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/patient/appeals/{{appealId}}/status",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "patient", "appeals", "{{appealId}}", "status"],
+              "query": [
+                {
+                  "key": "language",
+                  "value": "English",
+                  "description": "Optional language parameter (English or Spanish)"
+                }
+              ]
+            },
+            "description": "Get a patient-friendly status update for an appeal"
+          },
+          "response": []
+        },
+        {
+          "name": "Get Appeal Cost Impact",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{authToken}}"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/patient/appeals/{{appealId}}/cost-impact",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "patient", "appeals", "{{appealId}}", "cost-impact"]
+            },
+            "description": "Get the financial impact analysis for an appeal"
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:5000",
+      "type": "string"
+    },
+    {
+      "key": "authToken",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "appealId",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "documentId",
+      "value": "",
+      "type": "string"
+    }
+  ]
+}

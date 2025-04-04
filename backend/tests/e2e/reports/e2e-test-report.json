@@ -1,0 +1,245 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 0,
+    "passes": 0,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-03-31T21:22:13.767Z",
+    "end": "2025-03-31T21:22:53.804Z",
+    "duration": 40037,
+    "testsRegistered": 5,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 2,
+    "hasOther": true,
+    "skipped": 5,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "51caa5c1-aabb-408d-84ed-81f1818893b1",
+      "title": "",
+      "fullFile": "/home/esima/cc1/AppealAid/backend/tests/e2e/response/approval.test.js",
+      "file": "/tests/e2e/response/approval.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b331cd6a-abf0-4136-8002-16847cc56b0a",
+          "title": "Approval Response Processing",
+          "fullFile": "/home/esima/cc1/AppealAid/backend/tests/e2e/response/approval.test.js",
+          "file": "/tests/e2e/response/approval.test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"Approval Response Processing\"",
+              "fullTitle": "Approval Response Processing \"before all\" hook in \"Approval Response Processing\"",
+              "timedOut": false,
+              "duration": 30013,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// Setup test database\ntestData = await setupTestDatabase();\n\n// Get authentication token\nconst loginResult = await loginViaApi();\ntoken = loginResult.token;\n\n// Setup WebDriver\ndriver = await setupDriver();",
+              "err": {
+                "message": "MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017",
+                "estack": "MongooseServerSelectionError: connect ECONNREFUSED 127.0.0.1:27017\n    at _handleConnectionErrors (node_modules/mongoose/lib/connection.js:816:11)\n    at NativeConnection.openUri (node_modules/mongoose/lib/connection.js:791:11)\n    at async setupTestDatabase (tests/e2e/utils/testUtils.js:90:5)\n    at async Context.<anonymous> (tests/e2e/response/approval.test.js:30:16)",
+                "diff": null
+              },
+              "uuid": "f395c587-15c5-49d5-9b99-f74e6a7a4480",
+              "parentUUID": "b331cd6a-abf0-4136-8002-16847cc56b0a",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"Approval Response Processing\"",
+              "fullTitle": "Approval Response Processing \"after all\" hook in \"Approval Response Processing\"",
+              "timedOut": false,
+              "duration": 10019,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// Quit WebDriver\nif (driver) {\n  await driver.quit();\n}\n\n// Clean up test database\nawait cleanupTestDatabase();",
+              "err": {
+                "message": "MongooseError: Operation `users.deleteMany()` buffering timed out after 10000ms",
+                "estack": "MongooseError: Operation `users.deleteMany()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:185:23)\n    at listOnTimeout (node:internal/timers:594:17)\n    at process.processTimers (node:internal/timers:529:7)",
+                "diff": null
+              },
+              "uuid": "cc78aa82-5592-4d8c-8ab2-0bfeb92b8dbc",
+              "parentUUID": "b331cd6a-abf0-4136-8002-16847cc56b0a",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "607aa02c-6240-4b8d-96e4-82d6cd069e80",
+              "title": "API Tests",
+              "fullFile": "/home/esima/cc1/AppealAid/backend/tests/e2e/response/approval.test.js",
+              "file": "/tests/e2e/response/approval.test.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should create an approval response document",
+                  "fullTitle": "Approval Response Processing API Tests should create an approval response document",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": null,
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "// Create a response document\nconst responseDoc = await createResponseDocument({\n  fileName: 'approval_response.pdf',\n  documentType: 'insuranceResponse',\n  claimNumber: 'CLAIM12345',\n  patientName: 'John Doe',\n  serviceDate: '2023-05-01',\n  decision: 'approved',\n  approvedAmount: 1800\n}, token);\n\n// Verify document was created\nexpect(responseDoc).to.have.property('_id');\nexpect(responseDoc.documentType).to.equal('insuranceResponse');\n\n// Store for later use\ntestData.responseDocument = responseDoc;",
+                  "err": {},
+                  "uuid": "08722f7d-7274-456a-871e-1e5926773e2e",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": true
+                },
+                {
+                  "title": "should process the approval response document",
+                  "fullTitle": "Approval Response Processing API Tests should process the approval response document",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": null,
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "// Process the response document\nconst result = await processResponseDocument(testData.responseDocument._id, token);\n\n// Verify processing was successful\nexpect(result.success).to.be.true;\nexpect(result.decision).to.equal('approved');\nexpect(result.recoveredAmount).to.equal(1800);\nexpect(result).to.have.property('appeal');\nexpect(result).to.have.property('nextSteps');\nexpect(result.nextSteps).to.be.an('array');\n\n// Check that patient status update is included\nexpect(result).to.have.property('patientStatusUpdate');\nexpect(result.patientStatusUpdate).to.have.property('currentStatus');",
+                  "err": {},
+                  "uuid": "47c7b35c-55f3-4c88-87c6-efb47dd9172d",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": true
+                },
+                {
+                  "title": "should update the appeal with approval details",
+                  "fullTitle": "Approval Response Processing API Tests should update the appeal with approval details",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": null,
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "// Get the updated appeal\nconst appeal = await getAppealData(testData.appeal._id, token);\n\n// Verify appeal was updated correctly\nexpect(appeal.status).to.equal('approved');\nexpect(appeal).to.have.property('outcomeDetails');\nexpect(appeal.outcomeDetails.decision).to.equal('approved');\nexpect(appeal.outcomeDetails.recoveredAmount).to.equal(1800);\n\n// Verify timeline was updated\nexpect(appeal.timeline).to.be.an('array');\nconst lastTimelineEntry = appeal.timeline[appeal.timeline.length - 1];\nexpect(lastTimelineEntry.status).to.equal('approved');",
+                  "err": {},
+                  "uuid": "2d748af6-5756-467c-8332-df3788343d7b",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": true
+                },
+                {
+                  "title": "should provide patient-friendly status update",
+                  "fullTitle": "Approval Response Processing API Tests should provide patient-friendly status update",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": null,
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "// Get patient status update\nconst statusUpdate = await getPatientStatusUpdate(testData.appeal._id, token);\n\n// Verify status update\nexpect(statusUpdate.success).to.be.true;\nexpect(statusUpdate.data).to.have.property('currentStatus');\nexpect(statusUpdate.data.currentStatus).to.equal('approved');\nexpect(statusUpdate.data).to.have.property('statusMessage');\nexpect(statusUpdate.data).to.have.property('nextSteps');\nexpect(statusUpdate.data.nextSteps).to.be.an('array');",
+                  "err": {},
+                  "uuid": "cd50ac9d-97fc-439e-94b8-5d3511d4925f",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": true
+                },
+                {
+                  "title": "should provide appeal cost impact analysis",
+                  "fullTitle": "Approval Response Processing API Tests should provide appeal cost impact analysis",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": null,
+                  "speed": null,
+                  "pass": false,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "// Get cost impact analysis\nconst costImpact = await getAppealCostImpact(testData.appeal._id, token);\n\n// Verify cost impact\nexpect(costImpact.success).to.be.true;\nexpect(costImpact.data).to.have.property('appealStatus');\nexpect(costImpact.data.appealStatus).to.equal('approved');\nexpect(costImpact.data).to.have.property('potentialSavings');\nexpect(costImpact.data.potentialSavings).to.have.property('successProbability');\nexpect(costImpact.data.potentialSavings.successProbability).to.equal(1);  // Should be 100% for approved appeals",
+                  "err": {},
+                  "uuid": "8284e0bb-37ea-4e57-85b0-e4372723114c",
+                  "parentUUID": null,
+                  "isHook": false,
+                  "skipped": true
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [],
+              "pending": [],
+              "skipped": [
+                "08722f7d-7274-456a-871e-1e5926773e2e",
+                "47c7b35c-55f3-4c88-87c6-efb47dd9172d",
+                "2d748af6-5756-467c-8332-df3788343d7b",
+                "cd50ac9d-97fc-439e-94b8-5d3511d4925f",
+                "8284e0bb-37ea-4e57-85b0-e4372723114c"
+              ],
+              "duration": 0,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 60000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 60000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 60000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "11.1.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "e2e-test-report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "/home/esima/cc1/AppealAid/backend/tests/e2e/reports",
+        "reportFilename": "e2e-test-report",
+        "overwrite": "true"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

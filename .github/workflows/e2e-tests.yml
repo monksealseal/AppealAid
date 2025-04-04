@@ -1,0 +1,85 @@
+name: E2E Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+    inputs:
+      testPattern:
+        description: 'Test pattern to run (e.g., "response" for response tests only)'
+        required: false
+        default: ''
+
+jobs:
+  e2e-tests:
+    runs-on: ubuntu-latest
+    
+    services:
+      # MongoDB service container for tests
+      mongodb:
+        image: mongo:latest
+        ports:
+          - 27017:27017
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Set up test environment
+        run: |
+          mkdir -p backend/logs
+          mkdir -p backend/uploads/temp
+          mkdir -p backend/tests/reports
+      
+      - name: Run E2E tests
+        run: |
+          if [ -z "${{ github.event.inputs.testPattern }}" ]; then
+            npm run test:e2e
+          else
+            npm run test:e2e -- --testPathPattern=${{ github.event.inputs.testPattern }}
+          fi
+        env:
+          NODE_ENV: test
+          MONGO_URI_TEST: mongodb://localhost:27017/appealaid_test
+          JWT_SECRET: test-jwt-secret-for-e2e
+      
+      - name: Upload test reports
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: e2e-test-reports
+          path: backend/tests/reports
+          retention-days: 30
+      
+      - name: Generate test summary
+        if: always()
+        run: |
+          echo "## E2E Test Results" >> $GITHUB_STEP_SUMMARY
+          if [ -f backend/tests/reports/e2e-tests-report.json ]; then
+            TOTAL=$(jq '.stats.tests' backend/tests/reports/e2e-tests-report.json)
+            PASSES=$(jq '.stats.passes' backend/tests/reports/e2e-tests-report.json)
+            FAILURES=$(jq '.stats.failures' backend/tests/reports/e2e-tests-report.json)
+            DURATION=$(jq '.stats.duration' backend/tests/reports/e2e-tests-report.json)
+            
+            echo "- Total Tests: $TOTAL" >> $GITHUB_STEP_SUMMARY
+            echo "- Passed: $PASSES" >> $GITHUB_STEP_SUMMARY
+            echo "- Failed: $FAILURES" >> $GITHUB_STEP_SUMMARY
+            echo "- Duration: $(echo "$DURATION/1000" | bc -l) seconds" >> $GITHUB_STEP_SUMMARY
+            
+            if [ "$FAILURES" -gt 0 ]; then
+              echo "### Failed Tests" >> $GITHUB_STEP_SUMMARY
+              jq -r '.failures[] | "- " + .fullTitle' backend/tests/reports/e2e-tests-report.json >> $GITHUB_STEP_SUMMARY
+            fi
+          else
+            echo "No test report found" >> $GITHUB_STEP_SUMMARY
+          fi

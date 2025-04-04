@@ -1,0 +1,445 @@
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route post '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route new '/login'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/login'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route post '/login'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route new '/profile'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/profile'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route get '/profile'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route get '/profile'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route put '/profile'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route put '/profile'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route new '/consent'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/consent'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route get '/consent'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route get '/consent'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route put '/consent'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route put '/consent'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route post '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route post '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route post '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route get '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route get '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route new '/:id'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/:id'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route get '/:id'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route get '/:id'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route delete '/:id'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route delete '/:id'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route new '/:id/process'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/:id/process'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route post '/:id/process'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route post '/:id/process'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route new '/:id/download'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/:id/download'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route get '/:id/download'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route get '/:id/download'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route new '/denials'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/denials'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route get '/denials'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route get '/denials'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route new '/batch'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/batch'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route patch '/batch'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route patch '/batch'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route post '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route post '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route get '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route get '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route new '/templates'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/templates'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route get '/templates'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route get '/templates'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route new '/analyze'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/analyze'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route post '/analyze'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route post '/analyze'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route new '/generate-letter'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/generate-letter'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route post '/generate-letter'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route post '/generate-letter'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route new '/:id'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/:id'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route get '/:id'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route get '/:id'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route put '/:id'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route put '/:id'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route new '/:id/submit'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/:id/submit'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route put '/:id/submit'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route put '/:id/submit'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route new '/:id/outcome'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/:id/outcome'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route put '/:id/outcome'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route put '/:id/outcome'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:application set "x-powered-by" to true
+Sun, 23 Mar 2025 16:22:12 GMT express:application set "etag" to 'weak'
+Sun, 23 Mar 2025 16:22:12 GMT express:application set "etag fn" to [Function: generateETag]
+Sun, 23 Mar 2025 16:22:12 GMT express:application set "env" to 'development'
+Sun, 23 Mar 2025 16:22:12 GMT express:application set "query parser" to 'extended'
+Sun, 23 Mar 2025 16:22:12 GMT express:application set "query parser fn" to [Function: parseExtendedQueryString]
+Sun, 23 Mar 2025 16:22:12 GMT express:application set "subdomain offset" to 2
+Sun, 23 Mar 2025 16:22:12 GMT express:application set "trust proxy" to false
+Sun, 23 Mar 2025 16:22:12 GMT express:application set "trust proxy fn" to [Function: trustNone]
+Sun, 23 Mar 2025 16:22:12 GMT express:application booting in development mode
+Sun, 23 Mar 2025 16:22:12 GMT express:application set "view" to [Function: View]
+Sun, 23 Mar 2025 16:22:12 GMT express:application set "views" to '/home/esima/cc1/AppealAid/backend/views'
+Sun, 23 Mar 2025 16:22:12 GMT express:application set "jsonp callback name" to 'callback'
+Sun, 23 Mar 2025 16:22:12 GMT express:router use '/' query
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router use '/' expressInit
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router use '/' helmetMiddleware
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router use '/' corsMiddleware
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router use '/' logger
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router use '/' jsonParser
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router use '/' urlencodedParser
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router use '/uploads' serveStatic
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/uploads'
+Sun, 23 Mar 2025 16:22:12 GMT express:router use '/api/users' router
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/api/users'
+Sun, 23 Mar 2025 16:22:12 GMT express:router use '/api/documents' router
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/api/documents'
+Sun, 23 Mar 2025 16:22:12 GMT express:router use '/api/appeals' router
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/api/appeals'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route new '/health'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/health'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:route get '/health'
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Sun, 23 Mar 2025 16:22:12 GMT express:router use '/' errorHandler
+Sun, 23 Mar 2025 16:22:12 GMT express:router:layer new '/'
+Server running in development mode on port 5000 (MOCK MongoDB)
+Sun, 23 Mar 2025 16:23:28 GMT express:router dispatching OPTIONS /api/users/profile
+Sun, 23 Mar 2025 16:23:28 GMT express:router query  : /api/users/profile
+Sun, 23 Mar 2025 16:23:28 GMT express:router expressInit  : /api/users/profile
+Sun, 23 Mar 2025 16:23:28 GMT express:router helmetMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:23:28 GMT express:router corsMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:23:28 GMT express:router dispatching OPTIONS /api/users/profile
+Sun, 23 Mar 2025 16:23:28 GMT express:router query  : /api/users/profile
+Sun, 23 Mar 2025 16:23:28 GMT express:router expressInit  : /api/users/profile
+Sun, 23 Mar 2025 16:23:28 GMT express:router helmetMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:23:28 GMT express:router corsMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:23:28 GMT express:router dispatching GET /api/users/profile
+Sun, 23 Mar 2025 16:23:28 GMT express:router query  : /api/users/profile
+Sun, 23 Mar 2025 16:23:28 GMT express:router expressInit  : /api/users/profile
+Sun, 23 Mar 2025 16:23:28 GMT express:router helmetMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:23:28 GMT express:router corsMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:23:28 GMT express:router logger  : /api/users/profile
+Sun, 23 Mar 2025 16:23:28 GMT express:router jsonParser  : /api/users/profile
+Sun, 23 Mar 2025 16:23:28 GMT body-parser:json skip empty body
+Sun, 23 Mar 2025 16:23:28 GMT express:router urlencodedParser  : /api/users/profile
+Sun, 23 Mar 2025 16:23:28 GMT body-parser:urlencoded skip empty body
+Sun, 23 Mar 2025 16:23:28 GMT express:router trim prefix (/api/users) from url /api/users/profile
+Sun, 23 Mar 2025 16:23:28 GMT express:router router /api/users : /api/users/profile
+Sun, 23 Mar 2025 16:23:28 GMT express:router dispatching GET /profile
+Sun, 23 Mar 2025 16:23:28 GMT morgan log request
+[0mGET /api/users/profile [36m304[0m 2.499 ms - -[0m
+Sun, 23 Mar 2025 16:23:28 GMT express:router dispatching GET /api/users/profile
+Sun, 23 Mar 2025 16:23:28 GMT express:router query  : /api/users/profile
+Sun, 23 Mar 2025 16:23:28 GMT express:router expressInit  : /api/users/profile
+Sun, 23 Mar 2025 16:23:28 GMT express:router helmetMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:23:28 GMT express:router corsMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:23:28 GMT express:router logger  : /api/users/profile
+Sun, 23 Mar 2025 16:23:28 GMT express:router jsonParser  : /api/users/profile
+Sun, 23 Mar 2025 16:23:28 GMT body-parser:json skip empty body
+Sun, 23 Mar 2025 16:23:28 GMT express:router urlencodedParser  : /api/users/profile
+Sun, 23 Mar 2025 16:23:28 GMT body-parser:urlencoded skip empty body
+Sun, 23 Mar 2025 16:23:28 GMT express:router trim prefix (/api/users) from url /api/users/profile
+Sun, 23 Mar 2025 16:23:28 GMT express:router router /api/users : /api/users/profile
+Sun, 23 Mar 2025 16:23:28 GMT express:router dispatching GET /profile
+Sun, 23 Mar 2025 16:23:28 GMT morgan log request
+[0mGET /api/users/profile [36m304[0m 0.812 ms - -[0m
+Sun, 23 Mar 2025 16:23:31 GMT express:router dispatching GET /
+Sun, 23 Mar 2025 16:23:31 GMT express:router query  : /
+Sun, 23 Mar 2025 16:23:31 GMT express:router expressInit  : /
+Sun, 23 Mar 2025 16:23:31 GMT express:router helmetMiddleware  : /
+Sun, 23 Mar 2025 16:23:31 GMT express:router corsMiddleware  : /
+Sun, 23 Mar 2025 16:23:31 GMT express:router logger  : /
+Sun, 23 Mar 2025 16:23:31 GMT express:router jsonParser  : /
+Sun, 23 Mar 2025 16:23:31 GMT body-parser:json skip empty body
+Sun, 23 Mar 2025 16:23:31 GMT express:router urlencodedParser  : /
+Sun, 23 Mar 2025 16:23:31 GMT body-parser:urlencoded skip empty body
+Sun, 23 Mar 2025 16:23:31 GMT express:router errorHandler  : /
+Sun, 23 Mar 2025 16:23:31 GMT finalhandler default 404
+Sun, 23 Mar 2025 16:23:31 GMT morgan log request
+[0mGET / [33m404[0m 0.836 ms - 139[0m
+Sun, 23 Mar 2025 16:23:59 GMT express:router dispatching OPTIONS /api/users/profile
+Sun, 23 Mar 2025 16:23:59 GMT express:router query  : /api/users/profile
+Sun, 23 Mar 2025 16:23:59 GMT express:router expressInit  : /api/users/profile
+Sun, 23 Mar 2025 16:23:59 GMT express:router helmetMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:23:59 GMT express:router corsMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:23:59 GMT express:router dispatching OPTIONS /api/users/profile
+Sun, 23 Mar 2025 16:23:59 GMT express:router query  : /api/users/profile
+Sun, 23 Mar 2025 16:23:59 GMT express:router expressInit  : /api/users/profile
+Sun, 23 Mar 2025 16:23:59 GMT express:router helmetMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:23:59 GMT express:router corsMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:23:59 GMT express:router dispatching GET /api/users/profile
+Sun, 23 Mar 2025 16:23:59 GMT express:router query  : /api/users/profile
+Sun, 23 Mar 2025 16:23:59 GMT express:router expressInit  : /api/users/profile
+Sun, 23 Mar 2025 16:23:59 GMT express:router helmetMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:23:59 GMT express:router corsMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:23:59 GMT express:router logger  : /api/users/profile
+Sun, 23 Mar 2025 16:23:59 GMT express:router jsonParser  : /api/users/profile
+Sun, 23 Mar 2025 16:23:59 GMT body-parser:json skip empty body
+Sun, 23 Mar 2025 16:23:59 GMT express:router urlencodedParser  : /api/users/profile
+Sun, 23 Mar 2025 16:23:59 GMT body-parser:urlencoded skip empty body
+Sun, 23 Mar 2025 16:23:59 GMT express:router trim prefix (/api/users) from url /api/users/profile
+Sun, 23 Mar 2025 16:23:59 GMT express:router router /api/users : /api/users/profile
+Sun, 23 Mar 2025 16:23:59 GMT express:router dispatching GET /profile
+Sun, 23 Mar 2025 16:23:59 GMT morgan log request
+[0mGET /api/users/profile [36m304[0m 0.650 ms - -[0m
+Sun, 23 Mar 2025 16:23:59 GMT express:router dispatching GET /api/users/profile
+Sun, 23 Mar 2025 16:23:59 GMT express:router query  : /api/users/profile
+Sun, 23 Mar 2025 16:23:59 GMT express:router expressInit  : /api/users/profile
+Sun, 23 Mar 2025 16:23:59 GMT express:router helmetMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:23:59 GMT express:router corsMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:23:59 GMT express:router logger  : /api/users/profile
+Sun, 23 Mar 2025 16:23:59 GMT express:router jsonParser  : /api/users/profile
+Sun, 23 Mar 2025 16:23:59 GMT body-parser:json skip empty body
+Sun, 23 Mar 2025 16:23:59 GMT express:router urlencodedParser  : /api/users/profile
+Sun, 23 Mar 2025 16:23:59 GMT body-parser:urlencoded skip empty body
+Sun, 23 Mar 2025 16:23:59 GMT express:router trim prefix (/api/users) from url /api/users/profile
+Sun, 23 Mar 2025 16:23:59 GMT express:router router /api/users : /api/users/profile
+Sun, 23 Mar 2025 16:23:59 GMT express:router dispatching GET /profile
+Sun, 23 Mar 2025 16:23:59 GMT morgan log request
+[0mGET /api/users/profile [36m304[0m 0.647 ms - -[0m
+Sun, 23 Mar 2025 16:24:03 GMT express:router dispatching GET /api/users/profile
+Sun, 23 Mar 2025 16:24:03 GMT express:router query  : /api/users/profile
+Sun, 23 Mar 2025 16:24:03 GMT express:router expressInit  : /api/users/profile
+Sun, 23 Mar 2025 16:24:03 GMT express:router helmetMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:24:03 GMT express:router corsMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:24:03 GMT express:router logger  : /api/users/profile
+Sun, 23 Mar 2025 16:24:03 GMT express:router jsonParser  : /api/users/profile
+Sun, 23 Mar 2025 16:24:03 GMT body-parser:json skip empty body
+Sun, 23 Mar 2025 16:24:03 GMT express:router urlencodedParser  : /api/users/profile
+Sun, 23 Mar 2025 16:24:03 GMT body-parser:urlencoded skip empty body
+Sun, 23 Mar 2025 16:24:03 GMT express:router trim prefix (/api/users) from url /api/users/profile
+Sun, 23 Mar 2025 16:24:03 GMT express:router router /api/users : /api/users/profile
+Sun, 23 Mar 2025 16:24:03 GMT express:router dispatching GET /profile
+Sun, 23 Mar 2025 16:24:03 GMT morgan log request
+[0mGET /api/users/profile [36m304[0m 0.689 ms - -[0m
+Sun, 23 Mar 2025 16:24:03 GMT express:router dispatching GET /api/users/profile
+Sun, 23 Mar 2025 16:24:03 GMT express:router query  : /api/users/profile
+Sun, 23 Mar 2025 16:24:03 GMT express:router expressInit  : /api/users/profile
+Sun, 23 Mar 2025 16:24:03 GMT express:router helmetMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:24:03 GMT express:router corsMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:24:03 GMT express:router logger  : /api/users/profile
+Sun, 23 Mar 2025 16:24:03 GMT express:router jsonParser  : /api/users/profile
+Sun, 23 Mar 2025 16:24:03 GMT body-parser:json skip empty body
+Sun, 23 Mar 2025 16:24:03 GMT express:router urlencodedParser  : /api/users/profile
+Sun, 23 Mar 2025 16:24:03 GMT body-parser:urlencoded skip empty body
+Sun, 23 Mar 2025 16:24:03 GMT express:router trim prefix (/api/users) from url /api/users/profile
+Sun, 23 Mar 2025 16:24:03 GMT express:router router /api/users : /api/users/profile
+Sun, 23 Mar 2025 16:24:03 GMT express:router dispatching GET /profile
+Sun, 23 Mar 2025 16:24:03 GMT morgan log request
+[0mGET /api/users/profile [36m304[0m 0.667 ms - -[0m
+Sun, 23 Mar 2025 16:24:05 GMT express:router dispatching OPTIONS /api/users/profile
+Sun, 23 Mar 2025 16:24:05 GMT express:router query  : /api/users/profile
+Sun, 23 Mar 2025 16:24:05 GMT express:router expressInit  : /api/users/profile
+Sun, 23 Mar 2025 16:24:05 GMT express:router helmetMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:24:05 GMT express:router corsMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:24:05 GMT express:router dispatching OPTIONS /api/users/profile
+Sun, 23 Mar 2025 16:24:05 GMT express:router query  : /api/users/profile
+Sun, 23 Mar 2025 16:24:05 GMT express:router expressInit  : /api/users/profile
+Sun, 23 Mar 2025 16:24:05 GMT express:router helmetMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:24:05 GMT express:router corsMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:24:05 GMT express:router dispatching GET /api/users/profile
+Sun, 23 Mar 2025 16:24:05 GMT express:router query  : /api/users/profile
+Sun, 23 Mar 2025 16:24:05 GMT express:router expressInit  : /api/users/profile
+Sun, 23 Mar 2025 16:24:05 GMT express:router helmetMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:24:05 GMT express:router corsMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:24:05 GMT express:router logger  : /api/users/profile
+Sun, 23 Mar 2025 16:24:05 GMT express:router jsonParser  : /api/users/profile
+Sun, 23 Mar 2025 16:24:05 GMT body-parser:json skip empty body
+Sun, 23 Mar 2025 16:24:05 GMT express:router urlencodedParser  : /api/users/profile
+Sun, 23 Mar 2025 16:24:05 GMT body-parser:urlencoded skip empty body
+Sun, 23 Mar 2025 16:24:05 GMT express:router trim prefix (/api/users) from url /api/users/profile
+Sun, 23 Mar 2025 16:24:05 GMT express:router router /api/users : /api/users/profile
+Sun, 23 Mar 2025 16:24:05 GMT express:router dispatching GET /profile
+Sun, 23 Mar 2025 16:24:05 GMT morgan log request
+[0mGET /api/users/profile [36m304[0m 0.625 ms - -[0m
+Sun, 23 Mar 2025 16:24:05 GMT express:router dispatching GET /api/users/profile
+Sun, 23 Mar 2025 16:24:05 GMT express:router query  : /api/users/profile
+Sun, 23 Mar 2025 16:24:05 GMT express:router expressInit  : /api/users/profile
+Sun, 23 Mar 2025 16:24:05 GMT express:router helmetMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:24:05 GMT express:router corsMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:24:05 GMT express:router logger  : /api/users/profile
+Sun, 23 Mar 2025 16:24:05 GMT express:router jsonParser  : /api/users/profile
+Sun, 23 Mar 2025 16:24:05 GMT body-parser:json skip empty body
+Sun, 23 Mar 2025 16:24:05 GMT express:router urlencodedParser  : /api/users/profile
+Sun, 23 Mar 2025 16:24:05 GMT body-parser:urlencoded skip empty body
+Sun, 23 Mar 2025 16:24:05 GMT express:router trim prefix (/api/users) from url /api/users/profile
+Sun, 23 Mar 2025 16:24:05 GMT express:router router /api/users : /api/users/profile
+Sun, 23 Mar 2025 16:24:05 GMT express:router dispatching GET /profile
+Sun, 23 Mar 2025 16:24:05 GMT morgan log request
+[0mGET /api/users/profile [36m304[0m 0.537 ms - -[0m
+Sun, 23 Mar 2025 16:25:54 GMT express:router dispatching OPTIONS /api/users/profile
+Sun, 23 Mar 2025 16:25:54 GMT express:router query  : /api/users/profile
+Sun, 23 Mar 2025 16:25:54 GMT express:router expressInit  : /api/users/profile
+Sun, 23 Mar 2025 16:25:54 GMT express:router helmetMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:25:54 GMT express:router corsMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:25:54 GMT express:router dispatching OPTIONS /api/users/profile
+Sun, 23 Mar 2025 16:25:54 GMT express:router query  : /api/users/profile
+Sun, 23 Mar 2025 16:25:54 GMT express:router expressInit  : /api/users/profile
+Sun, 23 Mar 2025 16:25:54 GMT express:router helmetMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:25:54 GMT express:router corsMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:25:54 GMT express:router dispatching GET /api/users/profile
+Sun, 23 Mar 2025 16:25:54 GMT express:router query  : /api/users/profile
+Sun, 23 Mar 2025 16:25:54 GMT express:router expressInit  : /api/users/profile
+Sun, 23 Mar 2025 16:25:54 GMT express:router helmetMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:25:54 GMT express:router corsMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:25:54 GMT express:router logger  : /api/users/profile
+Sun, 23 Mar 2025 16:25:54 GMT express:router jsonParser  : /api/users/profile
+Sun, 23 Mar 2025 16:25:54 GMT body-parser:json skip empty body
+Sun, 23 Mar 2025 16:25:54 GMT express:router urlencodedParser  : /api/users/profile
+Sun, 23 Mar 2025 16:25:54 GMT body-parser:urlencoded skip empty body
+Sun, 23 Mar 2025 16:25:54 GMT express:router trim prefix (/api/users) from url /api/users/profile
+Sun, 23 Mar 2025 16:25:54 GMT express:router router /api/users : /api/users/profile
+Sun, 23 Mar 2025 16:25:54 GMT express:router dispatching GET /profile
+Sun, 23 Mar 2025 16:25:54 GMT morgan log request
+[0mGET /api/users/profile [36m304[0m 1.024 ms - -[0m
+Sun, 23 Mar 2025 16:25:54 GMT express:router dispatching GET /api/users/profile
+Sun, 23 Mar 2025 16:25:54 GMT express:router query  : /api/users/profile
+Sun, 23 Mar 2025 16:25:54 GMT express:router expressInit  : /api/users/profile
+Sun, 23 Mar 2025 16:25:54 GMT express:router helmetMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:25:54 GMT express:router corsMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:25:54 GMT express:router logger  : /api/users/profile
+Sun, 23 Mar 2025 16:25:54 GMT express:router jsonParser  : /api/users/profile
+Sun, 23 Mar 2025 16:25:54 GMT body-parser:json skip empty body
+Sun, 23 Mar 2025 16:25:54 GMT express:router urlencodedParser  : /api/users/profile
+Sun, 23 Mar 2025 16:25:54 GMT body-parser:urlencoded skip empty body
+Sun, 23 Mar 2025 16:25:54 GMT express:router trim prefix (/api/users) from url /api/users/profile
+Sun, 23 Mar 2025 16:25:54 GMT express:router router /api/users : /api/users/profile
+Sun, 23 Mar 2025 16:25:54 GMT express:router dispatching GET /profile
+Sun, 23 Mar 2025 16:25:54 GMT morgan log request
+[0mGET /api/users/profile [36m304[0m 0.590 ms - -[0m
+Sun, 23 Mar 2025 16:38:47 GMT express:router dispatching OPTIONS /api/users/profile
+Sun, 23 Mar 2025 16:38:47 GMT express:router query  : /api/users/profile
+Sun, 23 Mar 2025 16:38:47 GMT express:router expressInit  : /api/users/profile
+Sun, 23 Mar 2025 16:38:47 GMT express:router helmetMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:38:47 GMT express:router corsMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:38:47 GMT express:router dispatching GET /api/users/profile
+Sun, 23 Mar 2025 16:38:47 GMT express:router query  : /api/users/profile
+Sun, 23 Mar 2025 16:38:47 GMT express:router expressInit  : /api/users/profile
+Sun, 23 Mar 2025 16:38:47 GMT express:router helmetMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:38:47 GMT express:router corsMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:38:47 GMT express:router logger  : /api/users/profile
+Sun, 23 Mar 2025 16:38:47 GMT express:router jsonParser  : /api/users/profile
+Sun, 23 Mar 2025 16:38:47 GMT body-parser:json skip empty body
+Sun, 23 Mar 2025 16:38:47 GMT express:router urlencodedParser  : /api/users/profile
+Sun, 23 Mar 2025 16:38:47 GMT body-parser:urlencoded skip empty body
+Sun, 23 Mar 2025 16:38:47 GMT express:router trim prefix (/api/users) from url /api/users/profile
+Sun, 23 Mar 2025 16:38:47 GMT express:router router /api/users : /api/users/profile
+Sun, 23 Mar 2025 16:38:47 GMT express:router dispatching GET /profile
+Sun, 23 Mar 2025 16:38:47 GMT morgan log request
+[0mGET /api/users/profile [36m304[0m 0.666 ms - -[0m
+Sun, 23 Mar 2025 16:38:47 GMT express:router dispatching GET /api/users/profile
+Sun, 23 Mar 2025 16:38:47 GMT express:router query  : /api/users/profile
+Sun, 23 Mar 2025 16:38:47 GMT express:router expressInit  : /api/users/profile
+Sun, 23 Mar 2025 16:38:47 GMT express:router helmetMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:38:47 GMT express:router corsMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:38:47 GMT express:router logger  : /api/users/profile
+Sun, 23 Mar 2025 16:38:47 GMT express:router jsonParser  : /api/users/profile
+Sun, 23 Mar 2025 16:38:47 GMT body-parser:json skip empty body
+Sun, 23 Mar 2025 16:38:47 GMT express:router urlencodedParser  : /api/users/profile
+Sun, 23 Mar 2025 16:38:47 GMT body-parser:urlencoded skip empty body
+Sun, 23 Mar 2025 16:38:47 GMT express:router trim prefix (/api/users) from url /api/users/profile
+Sun, 23 Mar 2025 16:38:47 GMT express:router router /api/users : /api/users/profile
+Sun, 23 Mar 2025 16:38:47 GMT express:router dispatching GET /profile
+Sun, 23 Mar 2025 16:38:47 GMT morgan log request
+[0mGET /api/users/profile [36m304[0m 0.545 ms - -[0m
+Sun, 23 Mar 2025 16:39:35 GMT express:router dispatching OPTIONS /api/users/profile
+Sun, 23 Mar 2025 16:39:35 GMT express:router query  : /api/users/profile
+Sun, 23 Mar 2025 16:39:35 GMT express:router expressInit  : /api/users/profile
+Sun, 23 Mar 2025 16:39:35 GMT express:router helmetMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:39:35 GMT express:router corsMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:39:35 GMT express:router dispatching OPTIONS /api/users/profile
+Sun, 23 Mar 2025 16:39:35 GMT express:router query  : /api/users/profile
+Sun, 23 Mar 2025 16:39:35 GMT express:router expressInit  : /api/users/profile
+Sun, 23 Mar 2025 16:39:35 GMT express:router helmetMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:39:35 GMT express:router corsMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:39:35 GMT express:router dispatching GET /api/users/profile
+Sun, 23 Mar 2025 16:39:35 GMT express:router query  : /api/users/profile
+Sun, 23 Mar 2025 16:39:35 GMT express:router expressInit  : /api/users/profile
+Sun, 23 Mar 2025 16:39:35 GMT express:router helmetMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:39:35 GMT express:router corsMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:39:35 GMT express:router logger  : /api/users/profile
+Sun, 23 Mar 2025 16:39:35 GMT express:router jsonParser  : /api/users/profile
+Sun, 23 Mar 2025 16:39:35 GMT body-parser:json skip empty body
+Sun, 23 Mar 2025 16:39:35 GMT express:router urlencodedParser  : /api/users/profile
+Sun, 23 Mar 2025 16:39:35 GMT body-parser:urlencoded skip empty body
+Sun, 23 Mar 2025 16:39:35 GMT express:router trim prefix (/api/users) from url /api/users/profile
+Sun, 23 Mar 2025 16:39:35 GMT express:router router /api/users : /api/users/profile
+Sun, 23 Mar 2025 16:39:35 GMT express:router dispatching GET /profile
+Sun, 23 Mar 2025 16:39:35 GMT morgan log request
+[0mGET /api/users/profile [36m304[0m 0.543 ms - -[0m
+Sun, 23 Mar 2025 16:39:35 GMT express:router dispatching GET /api/users/profile
+Sun, 23 Mar 2025 16:39:35 GMT express:router query  : /api/users/profile
+Sun, 23 Mar 2025 16:39:35 GMT express:router expressInit  : /api/users/profile
+Sun, 23 Mar 2025 16:39:35 GMT express:router helmetMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:39:35 GMT express:router corsMiddleware  : /api/users/profile
+Sun, 23 Mar 2025 16:39:35 GMT express:router logger  : /api/users/profile
+Sun, 23 Mar 2025 16:39:35 GMT express:router jsonParser  : /api/users/profile
+Sun, 23 Mar 2025 16:39:35 GMT body-parser:json skip empty body
+Sun, 23 Mar 2025 16:39:35 GMT express:router urlencodedParser  : /api/users/profile
+Sun, 23 Mar 2025 16:39:35 GMT body-parser:urlencoded skip empty body
+Sun, 23 Mar 2025 16:39:35 GMT express:router trim prefix (/api/users) from url /api/users/profile
+Sun, 23 Mar 2025 16:39:35 GMT express:router router /api/users : /api/users/profile
+Sun, 23 Mar 2025 16:39:35 GMT express:router dispatching GET /profile
+Sun, 23 Mar 2025 16:39:35 GMT morgan log request
+[0mGET /api/users/profile [36m304[0m 0.585 ms - -[0m

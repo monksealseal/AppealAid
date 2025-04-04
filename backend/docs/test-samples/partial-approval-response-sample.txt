@@ -1,0 +1,63 @@
+DETERMINATION NOTICE - PARTIAL APPROVAL
+
+UnitedHealthcare Insurance Company
+789 Healthcare Circle
+Medical City, TX 75001
+
+Date: 10/25/2023
+Member ID: UNITED9876543
+Group Number: UHC-555
+
+PATIENT INFORMATION:
+Patient: Michael Johnson
+Patient ID: P24680
+Date of Birth: 03/25/1975
+
+CLAIM INFORMATION:
+Claim Number: CL456789
+Appeal Number: AP345678
+Service Date(s): 08/15/2023 - 08/30/2023
+Provider: City Orthopedic Specialists
+Service: Orthopedic Evaluation and Treatment
+
+APPEAL DECISION: PARTIALLY APPROVED
+
+Dear Michael Johnson,
+
+We have completed our review of your appeal for the claim referenced above. Based on our review, we have determined that a portion of the services meet our coverage criteria, while other portions do not. Therefore, your appeal has been PARTIALLY APPROVED.
+
+DETAILED DECISION:
+
+Approved Services:
+- Initial orthopedic evaluation (CPT 99203): $250.00
+- X-rays of right knee (CPT 73560): $175.00
+- Physical therapy evaluation (CPT 97161): $125.00
+
+Denied Services:
+- Custom knee brace (HCPCS L1845): $950.00
+- Additional physical therapy sessions beyond evaluation (CPT 97110): $600.00
+
+Approved Amount: $550.00
+Denied Amount: $1,550.00
+
+REASON FOR PARTIAL APPROVAL:
+The initial evaluation, X-rays, and PT evaluation were determined to be medically necessary and appropriate for your diagnosed condition. However, the custom knee brace was denied as documentation did not establish why a standard knee brace would not be sufficient. The additional physical therapy sessions were denied as they exceed our coverage guidelines for your specific diagnosis without documentation showing exceptional circumstances.
+
+WHAT THIS MEANS FOR YOU:
+The approved services will be processed according to your plan benefits, subject to applicable deductibles, copayments, and coinsurance. You may be responsible for payment of the denied services.
+
+YOUR RIGHT TO APPEAL THIS DECISION:
+If you disagree with our decision regarding the denied services, you have the right to request a second-level appeal. To do so, please submit a written request within 30 days of this notice, along with any additional supporting documentation, to:
+
+UnitedHealthcare Appeals Department
+P.O. Box 54321
+Medical City, TX 75002
+
+ADDITIONAL INFORMATION:
+For any questions about this determination or your benefits, please contact Member Services at 1-877-555-9876, Monday through Friday, 7:00 AM to 7:00 PM CST.
+
+Sincerely,
+
+Elizabeth Williams, MD
+Medical Director
+UnitedHealthcare Insurance Company

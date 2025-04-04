@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AppealAid API</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .header h1 {
+      color: #2c3e50;
+    }
+    .logo {
+      max-width: 150px;
+    }
+    .container {
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .endpoints {
+      margin-top: 30px;
+    }
+    .endpoint {
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #fff;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    .method {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: bold;
+      margin-right: 10px;
+      min-width: 60px;
+      text-align: center;
+    }
+    .get {
+      background-color: #61affe;
+    }
+    .post {
+      background-color: #49cc90;
+    }
+    .put {
+      background-color: #fca130;
+    }
+    .delete {
+      background-color: #f93e3e;
+    }
+    .route {
+      font-family: monospace;
+      font-size: 16px;
+    }
+    .status {
+      display: inline-block;
+      padding: 4px 8px;
+      border-radius: 4px;
+      background-color: #27ae60;
+      color: white;
+      font-size: 14px;
+      margin-left: 10px;
+    }
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      color: #7f8c8d;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>AppealAid API</h1>
+    <p>Backend API for the AppealAid Insurance Appeal Automation Platform</p>
+    <div class="status">Online</div>
+  </div>
+  
+  <div class="container">
+    <div class="info">
+      <h2>API Information</h2>
+      <p>This is the backend API for AppealAid, a platform designed to streamline the insurance appeal process for healthcare providers and patients.</p>
+      <p>The frontend application communicates with this API to handle user authentication, appeal management, document processing, and more.</p>
+    </div>
+    
+    <div class="endpoints">
+      <h2>Available Endpoints</h2>
+      
+      <div class="endpoint">
+        <span class="method post">POST</span>
+        <span class="route">/api/users</span>
+        <p>Register a new user</p>
+      </div>
+      
+      <div class="endpoint">
+        <span class="method post">POST</span>
+        <span class="route">/api/users/login</span>
+        <p>Authenticate a user</p>
+      </div>
+      
+      <div class="endpoint">
+        <span class="method get">GET</span>
+        <span class="route">/api/users/profile</span>
+        <p>Get user profile (protected)</p>
+      </div>
+      
+      <div class="endpoint">
+        <span class="method get">GET</span>
+        <span class="route">/api/appeals</span>
+        <p>Get all appeals (protected)</p>
+      </div>
+      
+      <div class="endpoint">
+        <span class="method post">POST</span>
+        <span class="route">/api/appeals</span>
+        <p>Create a new appeal (protected)</p>
+      </div>
+      
+      <div class="endpoint">
+        <span class="method get">GET</span>
+        <span class="route">/api/appeals/:id</span>
+        <p>Get appeal by ID (protected)</p>
+      </div>
+      
+      <div class="endpoint">
+        <span class="method get">GET</span>
+        <span class="route">/api/peer-reviews</span>
+        <p>Get peer reviews (protected)</p>
+      </div>
+      
+      <div class="endpoint">
+        <span class="method post">POST</span>
+        <span class="route">/api/peer-reviews</span>
+        <p>Create peer review (protected)</p>
+      </div>
+      
+      <p>For a complete list of endpoints, refer to the API documentation.</p>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <p>AppealAid &copy; 2025 | API Version 1.0</p>
+  </div>
+</body>
+</html>

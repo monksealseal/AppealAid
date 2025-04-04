@@ -1,0 +1,55 @@
+NOTICE OF DETERMINATION
+
+Aetna Health Insurance
+456 Coverage Blvd
+Insurance Park, NY 10001
+
+Date: 10/20/2023
+Member ID: AET7654321
+Group Number: GRPAET123
+
+PATIENT INFORMATION:
+Patient: Jane Smith
+Patient ID: P67890
+Date of Birth: 02/15/1985
+
+CLAIM INFORMATION:
+Claim Number: CL987654
+Appeal Number: AP123456
+Service Date: 07/01/2023
+Provider: Back Pain Clinic
+Service: Physical Therapy (10 sessions)
+
+APPEAL DECISION: DENIED
+
+Dear Jane Smith,
+
+We have reviewed your appeal for the claim referenced above regarding Physical Therapy sessions. After careful consideration of all submitted documentation, we have determined that the treatment does not meet our coverage criteria. Therefore, your appeal has been DENIED.
+
+REASON FOR DENIAL:
+The documentation provided does not establish medical necessity for the frequency and duration of physical therapy requested. Our review indicates that the treatment plan exceeded our guidelines for the diagnosed condition, and alternative, less intensive treatment options were not adequately explored.
+
+WHAT THIS MEANS FOR YOU:
+The charges for these services will not be covered under your plan. You may be responsible for payment to the provider for these services.
+
+RIGHT TO EXTERNAL REVIEW:
+If you disagree with our decision, you have the right to request an external review by an independent third party. To request an external review, submit a written request within 60 days of this notice to:
+
+Aetna External Review Department
+P.O. Box 12345
+Insurance Park, NY 10002
+
+ADDITIONAL INFORMATION:
+The following clinical guidelines were used in making this determination:
+- Aetna Clinical Policy Bulletin #1234: Physical Therapy for Musculoskeletal Conditions
+- Evidence-based treatment guidelines for lower back pain management
+
+If you have questions about this determination or the appeal process, please contact our Appeals Department at 1-888-555-6789, Monday through Friday, 8:00 AM to 5:00 PM EST.
+
+Sincerely,
+
+Robert Johnson
+Senior Medical Review Specialist
+Aetna Health Insurance
+
+THIS DETERMINATION IS CONSIDERED FINAL FOR THIS LEVEL OF APPEAL

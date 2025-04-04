@@ -1,0 +1,14 @@
+{
+  "name": "appealaid-testing",
+  "version": "1.0.0",
+  "description": "Testing scripts for AppealAid",
+  "main": "run_tests.js",
+  "scripts": {
+    "test": "node run_tests.js",
+    "test:ui": "node test-ui.js",
+    "test:headless": "HEADLESS=true node run_tests.js"
+  },
+  "dependencies": {
+    "selenium-webdriver": "^4.15.0"
+  }
+}

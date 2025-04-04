@@ -8,7 +8,7 @@ const config = {
   api: {
     baseUrl: process.env.REACT_APP_API_URL || 'http://localhost:5000/api',
     timeout: 30000,
-    useMockApi: true, // Always use mock API for GitHub Pages deployment
+    useMockApi: process.env.REACT_APP_USE_MOCK_API === 'true' || process.env.NODE_ENV === 'production' || true, // Always use mock API for GitHub Pages deployment
   },
   
   // Authentication settings

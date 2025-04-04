@@ -4,7 +4,11 @@
   <meta charset="utf-8">
   <title>Redirecting to AppealAid</title>
   <script>
-    sessionStorage.setItem('redirectPath', window.location.pathname);
+    // Store the full path minus the base path
+    var path = window.location.pathname;
+    path = path.replace(/^\/AppealAid/, '');
+    if (!path) path = '/';
+    sessionStorage.setItem('redirectPath', path);
     window.location.href = '/AppealAid/';
   </script>
 </head>

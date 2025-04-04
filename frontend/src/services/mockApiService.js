@@ -152,35 +152,25 @@ const mockApiService = {
   login: async (email, password) => {
     await delay(500); // Simulate network delay
     
-    // For demo purpose, any email with correct demo password works
-    if (password === 'demopassword123') {
-      const mockUser = {
-        _id: 'user1',
-        firstName: 'Demo',
-        lastName: 'User',
-        email: email,
-        role: 'patient',
-        token: 'mocktoken123456',
-        insuranceInfo: {
-          provider: 'Blue Cross Blue Shield',
-          memberId: 'BCBS12345678',
-          groupNumber: 'GROUP123'
-        }
-      };
-      
-      return {
-        success: true,
-        ...mockUser
-      };
-    }
-    
-    throw {
-      response: {
-        status: 401,
-        data: {
-          message: 'Invalid email or password'
-        }
+    // For demo purpose, any email with password works
+    // This is easier for users testing the GitHub Pages deployment
+    const mockUser = {
+      _id: 'user1',
+      firstName: 'Demo',
+      lastName: 'User',
+      email: email || 'demo@example.com',
+      role: 'patient',
+      token: 'mocktoken123456',
+      insuranceInfo: {
+        provider: 'Blue Cross Blue Shield',
+        memberId: 'BCBS12345678',
+        groupNumber: 'GROUP123'
       }
+    };
+    
+    return {
+      success: true,
+      ...mockUser
     };
   },
   

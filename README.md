@@ -2,6 +2,12 @@
 
 AppealAid is a comprehensive platform designed to streamline the insurance appeal process for healthcare providers and patients. The application helps users create, track, and manage insurance appeals efficiently.
 
+## Live Demo
+
+The application is available for demo at: [https://monksealseal.github.io/AppealAid/](https://monksealseal.github.io/AppealAid/)
+
+You can log in with any email and password to test the application. All data is mock data for demonstration purposes.
+
 ## Features
 
 - **User Authentication & Authorization**: Secure account creation and login

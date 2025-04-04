@@ -3,32 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>Redirecting to AppealAid</title>
-  <script>
-    // Store the full path minus the base path
-    var path = window.location.pathname;
-    path = path.replace(/^\/AppealAid/, '');
-    
-    // Ensure path starts with slash
-    if (!path || path === '') path = '/';
-    if (path.charAt(0) !== '/') path = '/' + path;
-    
-    // Handle query parameters and hash
-    if (window.location.search) {
-      path += window.location.search;
-    }
-    if (window.location.hash) {
-      path += window.location.hash;
-    }
-    
-    // Store for React Router
-    sessionStorage.setItem('redirectPath', path);
-    console.log('Redirecting from 404. Path stored:', path);
-    
-    // Redirect to app root
-    window.location.href = '/AppealAid/';
-  </script>
+  <script src="/AppealAid/router.js"></script>
 </head>
 <body>
+  <noscript>
+    <p>JavaScript is required to use AppealAid. Please enable JavaScript and <a href="/AppealAid/">try again</a>.</p>
+  </noscript>
   <p>Redirecting to AppealAid...</p>
 </body>
 </html>

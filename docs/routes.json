@@ -1,0 +1,15 @@
+{
+  "routes": [
+    { "path": "/login", "title": "Login" },
+    { "path": "/register", "title": "Register" },
+    { "path": "/dashboard", "title": "Dashboard" },
+    { "path": "/appeals", "title": "Appeals" },
+    { "path": "/appeals/new", "title": "Create Appeal" },
+    { "path": "/appeals/ai-generator", "title": "AI Appeal Generator" },
+    { "path": "/appeals/tracking", "title": "Appeals Tracking" },
+    { "path": "/appeals/reporting", "title": "Appeals Reporting" },
+    { "path": "/documents", "title": "Documents" },
+    { "path": "/documents/upload", "title": "Upload Document" },
+    { "path": "/profile", "title": "Profile" }
+  ]
+}

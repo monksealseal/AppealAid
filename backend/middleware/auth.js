@@ -14,6 +14,12 @@ const logger = require('../utils/logger');
  */
 exports.authenticate = async (req, res, next) => {
   try {
+    // Bypass auth in mock mode
+    if (process.env.USE_MOCK_DB === 'true') {
+      req.user = { _id: '60d0fe4f5311236168a109ca', id: '60d0fe4f5311236168a109ca', email: 'demo@appealaid.com', role: 'admin' };
+      return next();
+    }
+
     // For development and testing, allow bypass with special header
     if (process.env.NODE_ENV === 'development' && req.headers['x-bypass-auth'] === 'true') {
       req.user = { _id: 'dev-user', role: 'admin' };

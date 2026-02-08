@@ -1486,7 +1486,7 @@ const predictAppealSuccess = (appealData) => {
       break;
     case 'urgencyOverride':
       recommendedActions.push('Obtain an urgent physician statement detailing risks of delaying kidney biopsy');
-      recommendedActions.push('Request your physician call the insurer's medical director directly');
+      recommendedActions.push('Request your physician call the insurer\'s medical director directly');
       recommendedActions.push('Mark all communications as "URGENT MEDICAL NECESSITY OVERRIDE REQUEST"');
       break;
     case 'clinicalTrial':
@@ -1499,7 +1499,7 @@ const predictAppealSuccess = (appealData) => {
       recommendedActions.push('Obtain letter from UHealth department chair/division chief');
       recommendedActions.push('Document why community hospital care would be insufficient');
       recommendedActions.push('Provide literature supporting need for academic medical center expertise');
-      recommendedActions.push('List all subspecialties involved in patient's care');
+      recommendedActions.push('List all subspecialties involved in patient\'s care');
       break;
     case 'teachingPhysician':
       recommendedActions.push('Submit complete medical record with teaching physician attestations highlighted');

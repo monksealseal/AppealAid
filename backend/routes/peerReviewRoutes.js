@@ -12,6 +12,12 @@ const { authenticate, restrictTo } = require('../middleware/auth');
 // All routes require authentication
 router.use(authenticate);
 
+// Get all peer-to-peer reviews
+router.get(
+  '/',
+  peerReviewController.searchPeerReviews
+);
+
 // Create a new peer-to-peer review
 router.post(
   '/',

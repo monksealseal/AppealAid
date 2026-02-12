@@ -11,8 +11,6 @@ const path = require('path');
 const helmet = require('helmet');
 const logger = require('./utils/logger');
 const { defaultLimiter } = require('./middleware/rateLimit');
-const responseRoutes = require('./routes/responseRoutes');
-const providerCollaborationRoutes = require('./routes/providerCollaborationRoutes');
 
 // Load environment variables
 require('dotenv').config();
@@ -42,17 +40,19 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Connect to MongoDB
 const connectDB = async () => {
   try {
-    // Skip DB connection if in mock mode (for testing)
     if (process.env.USE_MOCK_DB === 'true') {
-      logger.info('Using mock database');
+      // Use in-memory MongoDB for mock/demo mode
+      const { startMockDb } = require('./utils/mockDb');
+      await startMockDb();
+      logger.info('Using in-memory mock database with seeded data');
       return;
     }
-    
+
     const conn = await mongoose.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/appealaid', {
       useNewUrlParser: true,
       useUnifiedTopology: true
     });
-    
+
     logger.info(`MongoDB Connected: ${conn.connection.host}`);
   } catch (error) {
     logger.error(`Error connecting to MongoDB: ${error.message}`);
@@ -60,10 +60,8 @@ const connectDB = async () => {
   }
 };
 
-// Connect to database (unless running in test mode with --no-db flag)
-if (process.env.NODE_ENV !== 'test' || process.env.USE_MOCK_DB !== 'true') {
-  connectDB();
-}
+// Connect to database
+const dbReady = connectDB();
 
 // Default route
 app.get('/', (req, res) => {
@@ -81,7 +79,7 @@ app.get('/health', (req, res) => {
     timestamp: Date.now(),
     environment: process.env.NODE_ENV || 'development'
   };
-  
+
   try {
     res.status(200).json(healthcheck);
   } catch (error) {
@@ -92,26 +90,32 @@ app.get('/health', (req, res) => {
 });
 
 // Routes
-app.use('/api/responses', responseRoutes);
-app.use('/api/provider-collaboration', providerCollaborationRoutes);
-
-// Add other routes here
+const responseRoutes = require('./routes/responseRoutes');
+const providerCollaborationRoutes = require('./routes/providerCollaborationRoutes');
 const appealRoutes = require('./routes/appealRoutes');
 const peerReviewRoutes = require('./routes/peerReviewRoutes');
 const userRoutes = require('./routes/userRoutes');
+const documentRoutes = require('./routes/documentRoutes');
+const patientRoutes = require('./routes/patientRoutes');
+const facilityRoutes = require('./routes/facilityRoutes');
+const batchRoutes = require('./routes/batchRoutes');
 
+app.use('/api/responses', responseRoutes);
+app.use('/api/provider-collaboration', providerCollaborationRoutes);
 app.use('/api/appeals', appealRoutes);
 app.use('/api/peer-reviews', peerReviewRoutes);
 app.use('/api/users', userRoutes);
-// app.use('/api/documents', documentRoutes);
-// app.use('/api/patients', patientRoutes);
+app.use('/api/documents', documentRoutes);
+app.use('/api/patients', patientRoutes);
+app.use('/api/facilities', facilityRoutes);
+app.use('/api/batches', batchRoutes);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
   logger.error(err.stack);
-  
+
   const statusCode = res.statusCode === 200 ? 500 : res.statusCode;
-  
+
   res.status(statusCode).json({
     success: false,
     message: err.message,
@@ -131,23 +135,24 @@ app.use((req, res) => {
 try {
   const monitor = require('./utils/monitor');
   if (process.env.NODE_ENV === 'production') {
-    // Start monitoring in production
     monitor.startMonitoring();
   }
 } catch (error) {
-  logger.warn('Monitoring module not available:', error.message);
+  logger.warn(`Monitoring module not available: ${error.message}`);
 }
 
 // Start the server
 const PORT = process.env.PORT || 5000;
 
 if (process.env.NODE_ENV !== 'test') {
-  app.listen(PORT, () => {
-    logger.info(`Server running in ${process.env.NODE_ENV || 'development'} mode on port ${PORT}`);
-    logger.info(`API available at http://localhost:${PORT}`);
-    if (process.env.NODE_ENV === 'production') {
-      logger.info('Running in production mode with enhanced security');
-    }
+  dbReady.then(() => {
+    app.listen(PORT, () => {
+      logger.info(`Server running in ${process.env.NODE_ENV || 'development'} mode on port ${PORT}`);
+      logger.info(`API available at http://localhost:${PORT}`);
+      if (process.env.NODE_ENV === 'production') {
+        logger.info('Running in production mode with enhanced security');
+      }
+    });
   });
 }
 

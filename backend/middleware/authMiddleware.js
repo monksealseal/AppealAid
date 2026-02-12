@@ -9,8 +9,9 @@ const protect = asyncHandler(async (req, res, next) => {
   // When in mock mode, bypass authentication
   if (process.env.USE_MOCK_DB === 'true') {
     req.user = {
-      id: 'mock-user-id',
-      email: 'mock-user@example.com',
+      id: '60d0fe4f5311236168a109ca',
+      _id: '60d0fe4f5311236168a109ca',
+      email: 'demo@appealaid.com',
       role: 'admin'
     };
     return next();

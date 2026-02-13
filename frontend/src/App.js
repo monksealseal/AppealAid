@@ -25,6 +25,13 @@ import ReportingDashboard from './pages/ReportingDashboard';
 import Profile from './pages/Profile';
 import NotFound from './pages/NotFound';
 
+// Public pages
+import Landing from './pages/Landing';
+import Pricing from './pages/Pricing';
+import TermsOfService from './pages/TermsOfService';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import Billing from './pages/Billing';
+
 // Auth components and context
 import { AuthProvider } from './context/AuthContext';
 import PrivateRoute from './components/auth/PrivateRoute';
@@ -97,10 +104,16 @@ function App() {
         <CssBaseline />
         <AuthProvider>
           <Routes>
-            {/* Public routes */}
+            {/* Public marketing pages */}
+            <Route path="/landing" element={<Landing />} />
+            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/terms" element={<TermsOfService />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
+
+            {/* Auth routes */}
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
-            
+
             {/* Protected routes */}
             <Route path="/" element={<Layout />}>
               <Route index element={<PrivateRoute><Dashboard /></PrivateRoute>} />
@@ -113,9 +126,10 @@ function App() {
               <Route path="appeals/tracking" element={<PrivateRoute><AppealsTracking /></PrivateRoute>} />
               <Route path="appeals/reporting" element={<PrivateRoute><ReportingDashboard /></PrivateRoute>} />
               <Route path="appeals/:id" element={<PrivateRoute><AppealDetail /></PrivateRoute>} />
+              <Route path="billing" element={<PrivateRoute><Billing /></PrivateRoute>} />
               <Route path="profile" element={<PrivateRoute><Profile /></PrivateRoute>} />
             </Route>
-            
+
             {/* Fallback routes */}
             <Route path="/404" element={<NotFound />} />
             <Route path="*" element={<Navigate to="/404" replace />} />

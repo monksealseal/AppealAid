@@ -20,6 +20,7 @@ import {
   Settings as SettingsIcon,
   Help as HelpIcon,
   BarChart as ReportingIcon,
+  CreditCard as BillingIcon,
 } from '@mui/icons-material';
 import { useAuth } from '../../context/AuthContext';
 
@@ -61,6 +62,11 @@ const accountItems = [
     text: 'Profile',
     icon: <ProfileIcon />,
     path: '/profile',
+  },
+  {
+    text: 'Billing',
+    icon: <BillingIcon />,
+    path: '/billing',
   },
   {
     text: 'Settings',

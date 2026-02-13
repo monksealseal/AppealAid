@@ -400,6 +400,8 @@ async function seedDatabase() {
     try { patchModel(require('../models/patientModel')); } catch (e) { /* optional */ }
     try { patchModel(require('../models/templateModel')); } catch (e) { /* optional */ }
     try { patchModel(require('../models/checklistModel')); } catch (e) { /* optional */ }
+    try { patchModel(require('../models/subscriptionModel')); } catch (e) { /* optional */ }
+    try { patchModel(require('../models/organizationModel')); } catch (e) { /* optional */ }
 
     // Create demo users (password is pre-hashed for 'password123')
     const hashedPassword = await bcrypt.hash('password123', 10);

@@ -99,6 +99,8 @@ const documentRoutes = require('./routes/documentRoutes');
 const patientRoutes = require('./routes/patientRoutes');
 const facilityRoutes = require('./routes/facilityRoutes');
 const batchRoutes = require('./routes/batchRoutes');
+const subscriptionRoutes = require('./routes/subscriptionRoutes');
+const organizationRoutes = require('./routes/organizationRoutes');
 
 app.use('/api/responses', responseRoutes);
 app.use('/api/provider-collaboration', providerCollaborationRoutes);
@@ -109,6 +111,8 @@ app.use('/api/documents', documentRoutes);
 app.use('/api/patients', patientRoutes);
 app.use('/api/facilities', facilityRoutes);
 app.use('/api/batches', batchRoutes);
+app.use('/api/subscriptions', subscriptionRoutes);
+app.use('/api/organizations', organizationRoutes);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
